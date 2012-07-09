@@ -2,6 +2,7 @@
  * Binds a FileUploader widget to an HTML element.
  * WORK IN PROGRESS. NEEDS CLEANING
  * 
+ * @requires http://valums.com/ajax-upload/
  * @param expression {object} options can contain the following keys:
  * 		url {string} path to where resources should be uploaded
  * 		allowedFileTypes {array[string]} an array of strings of allowed file types

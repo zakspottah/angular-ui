@@ -2,7 +2,10 @@
  * Binds a FileUploader widget to an HTML element.
  * WORK IN PROGRESS. NEEDS CLEANING
  * 
- * @example <fieldset ui-uploader></fieldset>
+ * @param expression {object} options can contain the following keys:
+ * 		url {string} path to where resources should be uploaded
+ * 		allowedFileTypes {array[string]} an array of strings of allowed file types
+ * @example <div ui-uploader="{ url : '../../action/resource?action=uploadCoverLetter', allowedFileTypes : ['gif','png','jpg'] }" ng-model="someData"></div>
  */ 
 angular.module('ui.directives').directive('uiUploader', [function(){
 	return function(scope, elm, attrs) {
